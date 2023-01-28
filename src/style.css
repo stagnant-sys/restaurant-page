@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+
+* {
+ margin: 0;
+ box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+header {
+  background-color: #c70025;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 16px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container h1 {
+  font-family: "Potta One";
+  font-size: 4rem;
+  margin: 0;
+}
+
+.header-logo__image {
+  height: 5rem;
+}
+
+.catchphrase {
+  font-family: "Potta One";
+  font-size: 1.2rem;
+}
+
+#content {
+  height: 100%;
+}
+
+.main-content {
+  padding: 3rem;
+  background-color: #c70024bf;
+  height: 100%;
+}
