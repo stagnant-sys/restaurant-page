@@ -1,3 +1,6 @@
 import './style.css';
+import { headerDOMLoad } from './page-load';
+import { createBodyElement } from './createElements';
 
-console.log('webpack working');
+
+headerDOMLoad();
