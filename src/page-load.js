@@ -21,4 +21,28 @@ const headerDOMLoad = () => {
   header_container.appendChild(catchphrase_container);
 };
 
-export { headerDOMLoad };
+const tabsDOMLoad = () => {
+  const tabs_container = document.createElement('div');
+  tabs_container.classList.add('tabs-container');
+  CONTENT_DIV.appendChild(tabs_container);
+
+  const home_tab = document.createElement('div');
+  home_tab.classList.add('content-tab');
+  home_tab.setAttribute('id', 'home-tab__button');
+  home_tab.textContent = 'Our restaurant';
+  tabs_container.appendChild(home_tab);
+
+  const meals_tab = document.createElement('div');
+  meals_tab.classList.add('content-tab');
+  meals_tab.setAttribute('id', 'meals-tab__button');
+  meals_tab.textContent = 'Our meals';
+  tabs_container.appendChild(meals_tab);
+};
+
+const dynamicContentContainerLoad = () => {
+  const dynamicContentContainer = document.createElement('div');
+  dynamicContentContainer.setAttribute('id', 'dynamic-content__container');
+  CONTENT_DIV.appendChild(dynamicContentContainer);
+};
+
+export { headerDOMLoad, tabsDOMLoad, dynamicContentContainerLoad };

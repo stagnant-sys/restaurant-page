@@ -32,7 +32,7 @@ header {
 }
 
 .logo-container h1 {
-  font-family: "Potta One";
+  font-family: "Potta One", sans-serif;
   font-size: 4rem;
   margin: 0;
 }
@@ -42,7 +42,7 @@ header {
 }
 
 .catchphrase {
-  font-family: "Potta One";
+  font-family: "Potta One", sans-serif;
   font-size: 1.2rem;
 }
 
@@ -54,4 +54,136 @@ header {
   padding: 3rem;
   background-color: #fcf2f4;
   height: 100%;
+}
+
+.tabs-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.content-tab {
+  cursor: pointer;
+  width: 200px;
+  color: #aaaaaa;
+  padding: 1rem 0;
+  text-align: center;
+  font-family: "Potta One", sans-serif;
+  background-color: #efefef;
+  border: 5px solid #c70025;
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+}
+
+.selected {
+  background-color: #c70024ca;
+  color: white;
+}
+
+#dynamic-content__container {
+  margin: 50px 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-page__title {
+  background-color: #c70025;
+  color: #efefef;
+  font-family: "Potta One";
+  text-align: center;
+  border-radius: 25px 25px 0 0;
+  font-size: 2rem;
+  padding: 10px;
+}
+
+.home-page__infos {
+  font-family: 'Verdana', sans-serif;
+  border-left: 5px solid #c70025;
+  border-right: 5px solid #c70025;
+  padding: 5px 16px;
+  text-align: center;
+}
+
+.order-container {
+  background-color: #c70025;
+  border-radius: 0 0 25px 25px;
+  padding: 16px;
+  color: #efefef;
+  font-family: 'Verdana', sans-serif;
+  text-align: center;
+}
+
+.online-order__container {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.online-order__container button {
+  width: 200px;
+  font-family: 'Verdana', sans-serif;
+  padding: 5px 0;
+}
+
+.meals-page__content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background-color: #c70025;
+}
+
+
+.meal-container {
+  font-family: "Verdana", sans-serif;
+  width: fit-content;
+  height: 200px;
+  padding: 16px;
+  background-color: #efefef;
+  border: 5px solid #c70024a7;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 150px 200px;
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 16px;
+}
+
+.meal-container:nth-of-type(even) {
+  grid-template-areas:  "image name"
+                        "image description"
+                        "image description"
+                        "image price";
+}
+
+.meal-container:nth-of-type(odd) {
+  grid-template-areas:  "name image"
+                        "description image"
+                        "description image"
+                        "price image";
+}
+
+.meal-image {
+  grid-area: image;
+  max-width:150px;
+  max-height: 150px;
+  place-self: center center;
+  margin: 10px;
+}
+
+.meal-name {
+  grid-area: name;
+  font-weight: 700;
+}
+
+.meal-description {
+  grid-area: description;
+}
+
+.meal-price {
+  grid-area: price;
+  justify-self: right;
+  font-weight: 700;
 }
