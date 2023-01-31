@@ -5,7 +5,7 @@ import { home_tab_content } from './home-tab';
 import { meals_tab_content, createMeal } from './meals-page';
 
 const CONTENT_DIV = document.getElementById('content');
-const image_path = '../src/images/meals/';
+const image_path = './images/meals/';
 const lorem_ipsum = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
 
 headerDOMLoad();  // Load static content of the page

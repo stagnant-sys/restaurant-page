@@ -12,7 +12,7 @@ const headerDOMLoad = () => {
   logo_container.appendChild(text_logo);
   const image_logo = document.createElement('img');
   image_logo.classList.add('header-logo__image');
-  image_logo.src = '../src/images/logo.svg';
+  image_logo.src = './images/logo.svg';
   logo_container.appendChild(image_logo);
 
   const catchphrase_container = document.createElement('div');
