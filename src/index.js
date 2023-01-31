@@ -5,7 +5,8 @@ import { home_tab_content } from './home-tab';
 import { meals_tab_content, createMeal } from './meals-page';
 
 const CONTENT_DIV = document.getElementById('content');
-
+const image_path = '../src/images/meals/';
+const lorem_ipsum = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
 
 headerDOMLoad();  // Load static content of the page
 tabsDOMLoad();
@@ -30,7 +31,14 @@ MEALS_TAB_BUTTON.addEventListener('click', () => {
   HOME_TAB_BUTTON.classList.remove('selected');
   dynamicContentContainer.textContent = '';
   meals_tab_content(dynamicContentContainer);
-  createMeal('Maki', 'De savoureux makis', 5, '../src/images/meals/maki.png');
-  createMeal('Dumpling', 'Savourous dumplings', 4, '../src/images/meals/dumpling.png');
+  createMeal('Dumpling', lorem_ipsum, 4, image_path + 'dumpling.png');
+  createMeal('Maki', lorem_ipsum, 5, image_path + 'maki.png');
+  createMeal('Egg Nigiri', lorem_ipsum, 3, image_path + 'nigiri-egg.png');
+  createMeal('Salmon Nigiri', lorem_ipsum, 3, image_path + 'nigiri-salmon.png');
+  createMeal('Squid Nigiri', lorem_ipsum, 3, image_path + 'nigiri-squid.png');
+  createMeal('Sashimi', lorem_ipsum, 9, image_path +'sashimi.png');
+  createMeal('Tempura', lorem_ipsum, 7, image_path + 'tempura.png');
+  createMeal('Wasabi', lorem_ipsum, 1, image_path + 'wasabi.png');
+  createMeal('Pudding', lorem_ipsum, 5, image_path + 'pudding.png');
 });
 

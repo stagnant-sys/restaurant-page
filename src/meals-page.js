@@ -30,7 +30,7 @@ let createMeal = (name, description, price, image) => {
 
   const meal_price = document.createElement('div');
   meal_price.classList.add('meal-price');
-  meal_price.textContent = price + ' €';
+  meal_price.textContent = '$ ' + price;
   meal_container.appendChild(meal_price);
 };
 
