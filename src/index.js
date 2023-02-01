@@ -1,6 +1,6 @@
 import './style.css';
 import { createBodyElement } from './createElements';
-import { headerDOMLoad, tabsDOMLoad, dynamicContentContainerLoad } from './page-load';
+import { headerDOMLoad, tabsDOMLoad, dynamicContentContainerLoad, footerDOMLoad } from './page-load';
 import { home_tab_content } from './home-tab';
 import { meals_tab_content, createMeal } from './meals-page';
 
@@ -11,6 +11,7 @@ const lorem_ipsum = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, se
 headerDOMLoad();  // Load static content of the page
 tabsDOMLoad();
 dynamicContentContainerLoad();
+footerDOMLoad();
 const HOME_TAB_BUTTON = document.getElementById('home-tab__button');
 const MEALS_TAB_BUTTON = document.getElementById('meals-tab__button');
 const dynamicContentContainer = document.getElementById('dynamic-content__container');

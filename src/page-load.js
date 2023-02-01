@@ -45,4 +45,18 @@ const dynamicContentContainerLoad = () => {
   CONTENT_DIV.appendChild(dynamicContentContainer);
 };
 
-export { headerDOMLoad, tabsDOMLoad, dynamicContentContainerLoad };
+const footerDOMLoad = () => {
+  const footer = document.createElement('footer');
+  CONTENT_DIV.appendChild(footer);
+  const footer_infos = document.createElement('div');
+  footer_infos.classList.add('footer-content');
+  footer.appendChild(footer_infos);
+  const footer_copyright = document.createElement('div');
+  footer_copyright.textContent = 'All images are coming from the card game "Sushi Go!". Logo illustration by unDraw.';
+  footer.appendChild(footer_copyright);
+  const footer_copyright_bis = document.createElement('div');
+  footer_copyright_bis.textContent = '\u00A92023 stagnant-sys';
+  footer.appendChild(footer_copyright_bis);
+};
+
+export { headerDOMLoad, tabsDOMLoad, dynamicContentContainerLoad, footerDOMLoad };
