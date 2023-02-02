@@ -32,14 +32,14 @@ MEALS_TAB_BUTTON.addEventListener('click', () => {
   HOME_TAB_BUTTON.classList.remove('selected');
   dynamicContentContainer.textContent = '';
   meals_tab_content(dynamicContentContainer);
-  createMeal('Dumpling', lorem_ipsum, 4, image_path + 'dumpling.png');
-  createMeal('Maki', lorem_ipsum, 5, image_path + 'maki.png');
-  createMeal('Egg Nigiri', lorem_ipsum, 3, image_path + 'nigiri-egg.png');
-  createMeal('Salmon Nigiri', lorem_ipsum, 3, image_path + 'nigiri-salmon.png');
-  createMeal('Squid Nigiri', lorem_ipsum, 3, image_path + 'nigiri-squid.png');
-  createMeal('Sashimi', lorem_ipsum, 9, image_path +'sashimi.png');
-  createMeal('Tempura', lorem_ipsum, 7, image_path + 'tempura.png');
-  createMeal('Wasabi', lorem_ipsum, 1, image_path + 'wasabi.png');
-  createMeal('Pudding', lorem_ipsum, 5, image_path + 'pudding.png');
+  createMeal('Gyoza', 'Our finest steamed dumpling filled with a minced pork stuffing.', 4, image_path + 'dumpling.png');
+  createMeal('Maki', 'Juicy rice rolled in seaweed, complete with your choice of filling (crab, tuna, salmon, vegetables).', 5, image_path + 'maki.png');
+  createMeal('Egg Nigiri', 'A delicious nigiri topped with a slice of omelette.', 3, image_path + 'nigiri-egg.png');
+  createMeal('Salmon Nigiri', 'An exquisite nigiri topped with salmon sashimi.', 4, image_path + 'nigiri-salmon.png');
+  createMeal('Squid Nigiri', 'A luscious nigiri topped with fresh squid.', 3, image_path + 'nigiri-squid.png');
+  createMeal('Sashimi', 'A yummy selection of our best sashimis (bonito, salmon, bluefin tuna).', 9, image_path +'sashimi.png');
+  createMeal('Shrimp tempura', 'Lightly battered and deep fried shrimps.', 7, image_path + 'tempura.png');
+  createMeal('Wasabi', 'Get your tongue lit up with our authentic wasabi paste, ready to accompany any of our meals.', 1, image_path + 'wasabi.png');
+  createMeal('Pudding', 'End your meal on a sweet note with our delicious pudding.', 5, image_path + 'pudding.png');
 });
 

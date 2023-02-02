@@ -209,6 +209,7 @@ header {
   grid-area: price;
   justify-self: right;
   font-weight: 700;
+  margin-top: 1rem;
 }
 
 footer {

@@ -52,7 +52,7 @@ const footerDOMLoad = () => {
   footer_infos.classList.add('footer-content');
   footer.appendChild(footer_infos);
   const footer_copyright = document.createElement('div');
-  footer_copyright.textContent = 'All images are coming from the card game "Sushi Go!". Logo illustration by unDraw.';
+  footer_copyright.textContent = 'All images are coming from the card game "Sushi Go!". Logo illustration by unDraw. Favicon created by Freepik - Flaticon';
   footer.appendChild(footer_copyright);
   const footer_copyright_bis = document.createElement('div');
   footer_copyright_bis.textContent = '\u00A92023 stagnant-sys';
