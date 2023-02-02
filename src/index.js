@@ -1,5 +1,4 @@
 import './style.css';
-import { createBodyElement } from './createElements';
 import { headerDOMLoad, tabsDOMLoad, dynamicContentContainerLoad, footerDOMLoad } from './page-load';
 import { home_tab_content } from './home-tab';
 import { meals_tab_content, createMeal } from './meals-page';
