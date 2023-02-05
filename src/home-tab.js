@@ -5,28 +5,32 @@ const MEALS_TAB_BUTTON = document.getElementById('meals-tab__button');
 
 const home_tab_content = (div) => {
   const infos_container = document.createElement('div');
+  infos_container.classList.add('infos-container');
   div.appendChild(infos_container);
   const title = document.createElement('div');
   title.classList.add('home-page__title');
   title.textContent = 'Welcome to Go! Sushis';
   infos_container.appendChild(title);
 
+  const restaurant_infos = document.createElement('div');
+  restaurant_infos.classList.add('restaurant-infos-container');
+  infos_container.appendChild(restaurant_infos);
   const infos = document.createElement('div');
   infos.classList.add('home-page__infos');
   infos.textContent = 'We serve the best sushis this side of the ocean!';
+  restaurant_infos.appendChild(infos);
   const infos_selling = document.createElement('div');
   infos_selling.classList.add('home-page__infos');
   infos_selling.textContent = 'Come visit us or give us a call to order your sushis and get them fresh in less than an hour.';
-  infos_container.appendChild(infos);
-  infos_container.appendChild(infos_selling);
+  restaurant_infos.appendChild(infos_selling);
   const infos_adress = document.createElement('div');
   infos_adress.textContent = '1274 Golf Club Rd, Las Cruces NY88011';
   infos_adress.classList.add('home-page__infos');
-  infos_container.appendChild(infos_adress);
+  restaurant_infos.appendChild(infos_adress);
   const infos_telephone = document.createElement('div');
   infos_telephone.classList.add('home-page__infos');
   infos_telephone.textContent = '(575) 521-1826';
-  infos_container.appendChild(infos_telephone);
+  restaurant_infos.appendChild(infos_telephone);
 
   const order_container = document.createElement('div');
   order_container.classList.add('order-container');
